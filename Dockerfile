@@ -59,15 +59,16 @@ ENV PATH $ACTIVATOR_HOME:$PATH
 
 ### Clonando App(criando sua pasta) + Dando permissao + entrendo na pasta
 RUN cd /home && git clone https://github.com/emersonjcarvalho/play-docker-teste.git && \
-    chmod -R 775 /home/play-docker-teste && \    
+    chmod -R 777 /home/play-docker-teste && \    
 	cd /home/play-docker-teste/
 
 VOLUME ["/home/activator-latest"]
 EXPOSE 9000 8888
 
 ### CMD ["/home/activator-latest/activator","ui","-Dhttp.address=0.0.0.0"]
+### CMD ["/home/play-docker-teste/activator","run","-Dhttp.address=0.0.0.0"]
 
 ### Rodando App
-CMD ["/home/play-docker-teste/activator","run","-Dhttp.address=0.0.0.0"]
+CMD ["/home/play-docker-teste/activator","start"]
 
 ## END
