@@ -67,8 +67,8 @@ EXPOSE 9000 8888
 
 ### CMD ["/home/activator-latest/activator","ui","-Dhttp.address=0.0.0.0"]
 ### CMD ["/home/play-docker-teste/activator","run","-Dhttp.address=0.0.0.0"]
-
+    
 ### Rodando App
-CMD ["/home/play-docker-teste/activator","start"]
+CMD ["/home/play-docker-teste/activator","start", "-Dhttp.port=80","-Dhttp.address=0.0.0.0", "-J-Xms128M", "-J-Xmx512m", "-J-server"]
 
 ## END
