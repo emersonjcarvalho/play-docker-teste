@@ -53,10 +53,21 @@ RUN mkdir ~/.activator
 # Run activator
 RUN ls -al
 
+### Variavel de ambiente ACTIVATOR
+ENV ACTIVATOR_HOME /home/activator-1.2.7
+ENV PATH $ACTIVATOR_HOME:$PATH
+
+### Clonando App(criando sua pasta) + Dando permissao + entrendo na pasta
+RUN cd /home && git clone https://github.com/emersonjcarvalho/play-docker-teste.git && \
+    chmod -rwxr-xr-x /home/play-docker-teste && \    
+	cd /home/play-docker-teste/
 
 VOLUME ["/home/activator-latest"]
-EXPOSE 8888 9000
+EXPOSE 9000 8888
 
-CMD ["/home/activator-latest/activator","ui","-Dhttp.address=0.0.0.0"]
+### CMD ["/home/activator-latest/activator","ui","-Dhttp.address=0.0.0.0"]
+
+### Rodando App
+CMD ["/home/play-docker-teste/activator","run","-Dhttp.address=0.0.0.0"]
 
 ## END
