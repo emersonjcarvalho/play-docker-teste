@@ -30,7 +30,7 @@ ENV JAVA_HOME /usr/bin/java
 ENV PATH $JAVA_HOME:$PATH
 
 #Install Activator
-RUN apt-get install -y unzip
+RUN apt-get install -y unzip git
 RUN pwd
 RUN wget --progress=dot:giga http://downloads.typesafe.com/typesafe-activator/1.2.7/typesafe-activator-1.2.7.zip && \
     mv typesafe-activator*.zip /home/ && \
