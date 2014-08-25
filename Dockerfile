@@ -57,8 +57,6 @@ RUN ls -al
 VOLUME ["/home/activator-latest"]
 EXPOSE 8888 9000
 
-### CMD ["/home/activator-latest/activator","ui","-Dhttp.address=127.0.0.1"]
-
-CMD ["/home/activator-latest/activator ui"]
+CMD ["/home/activator-latest/activator","ui","-Dhttp.address=0.0.0.0"]
 
 ## END
