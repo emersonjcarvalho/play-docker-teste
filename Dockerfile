@@ -59,7 +59,7 @@ ENV PATH $ACTIVATOR_HOME:$PATH
 
 ### Clonando App(criando sua pasta) + Dando permissao + entrendo na pasta
 RUN cd /home && git clone https://github.com/emersonjcarvalho/play-docker-teste.git && \
-    chmod -rwxr-xr-x /home/play-docker-teste && \    
+    chmod -R 775 /home/play-docker-teste && \    
 	cd /home/play-docker-teste/
 
 VOLUME ["/home/activator-latest"]
