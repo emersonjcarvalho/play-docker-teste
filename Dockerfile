@@ -22,4 +22,6 @@ EXPOSE 80:9000
 
 ### CMD cd /home/play-docker-teste && activator start -Dhttp.port=80 -Dhttp.address=0.0.0.0 -J-Xms128M -J-Xmx512m -J-server 
 
-CMD ["/home/play-docker-teste/activator","run"]
+### CMD ["/home/play-docker-teste/activator","run"]
+
+CMD cd /home/play-docker-teste && activator run
