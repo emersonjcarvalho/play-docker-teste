@@ -1,6 +1,6 @@
 FROM		dockerfile/java
 
-MAINTAINER	Sistemata
+MAINTAINER	sistemata
 
 ENV ACTIVATOR_VERSION 1.2.10-minimal
 ENV PATH $PATH:/home/activator-$ACTIVATOR_VERSION
@@ -20,5 +20,4 @@ RUN chmod -R 777 /home/play-docker-teste
 
 EXPOSE 80 9000 
 
-CMD cd /home/play-docker-teste && activator start -Dhttp.port=80 -Dhttp.address=0.0.0.0 -J-Xms128M -J-Xmx512m -J-server  
-
+CMD cd /home/play-docker-teste && activator start -Dhttp.port=80 -Dhttp.address=0.0.0.0 -J-Xms128M -J-Xmx512m -J-server 
