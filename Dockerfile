@@ -24,4 +24,4 @@ EXPOSE 80 9000
 
 RUN cd /home/play-docker-teste
 
-CMD ["activator start","-Dhttp.port=80"]
+CMD ["activator" "start","-Dhttp.port=80"]
