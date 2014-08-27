@@ -20,5 +20,5 @@ RUN chmod -R 777 /home/play-docker-teste
 
 EXPOSE 9000 8888
 
-RUN cd /home/play-docker-teste && activator start -Dhttp.port=1234 -Dhttp.address=0.0.0.0 -J-Xms128M -J-Xmx512m -J-server  
+CMD cd /home/play-docker-teste && activator start -Dhttp.port=1234 -Dhttp.address=0.0.0.0 -J-Xms128M -J-Xmx512m -J-server  
 
