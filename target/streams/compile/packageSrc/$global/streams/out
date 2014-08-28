@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0mPackaging W:\GitHub\play-docker-teste\target\scala-2.11\play-docker-teste_2.11-1.0-SNAPSHOT-sources.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	application.conf[0m
+[0m[[0mdebug[0m] [0m	  W:\GitHub\play-docker-teste\conf\application.conf[0m
+[0m[[0mdebug[0m] [0m	routes[0m
+[0m[[0mdebug[0m] [0m	  W:\GitHub\play-docker-teste\conf\routes[0m
+[0m[[0mdebug[0m] [0m	controllers\Application.java[0m
+[0m[[0mdebug[0m] [0m	  W:\GitHub\play-docker-teste\app\controllers\Application.java[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
